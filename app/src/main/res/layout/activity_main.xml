@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_to_autocomplete"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="AutoComplete" />
+
+        <Button
+            android:id="@+id/btn_to_timepicker"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="TimePicker" />
+
+        <Button
+            android:id="@+id/btn_to_datepicker"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="DatePicker" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_signature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/nav_bar"
+        android:text="Marcelo Avendaño - 2023800251"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:orientation="horizontal"
+        style="?android:attr/buttonBarStyle">
+
+        <Button
+            android:id="@+id/nav_autocomplete"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Auto"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/nav_timepicker"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/nav_datepicker"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+</RelativeLayout>
